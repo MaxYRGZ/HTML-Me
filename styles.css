@@ -1,0 +1,260 @@
+/* General Styles */
+body {
+    min-height: 100vh; /* Establece la altura mínima del cuerpo al 100% de la ventana */
+    background-color: black; /* Color de fondo negro */
+    color: white; /* Color del texto blanco */
+    display: flex; /* Usa Flexbox para alinear los elementos */
+    flex-direction: column; /* Dispone los elementos en una columna */
+}
+
+.text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Agrega sombra al texto */
+}
+
+.box-shadow {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Agrega sombra a los elementos */
+}
+
+/* Header Styles */
+header {
+    background-color: #38a169; /* Color de fondo verde para el encabezado */
+    padding: 16px; /* Espaciado interno de 16px */
+    display: flex; /* Usa Flexbox para alinear los elementos dentro del encabezado */
+    justify-content: space-between; /* Espacia los elementos para que estén en los extremos */
+    align-items: center; /* Centra verticalmente los elementos */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Agrega sombra al encabezado */
+}
+
+.header-title {
+    color: black; /* Color del título negro */
+    font-size: 1.5rem; /* Tamaño de fuente de 1.5 rem */
+    font-weight: bold; /* Negrita */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra del texto */
+}
+
+.menu-button {
+    background-color: transparent; /* Fondo transparente para el botón de menú */
+    color: black; /* Color del texto del botón negro */
+    font-weight: bold; /* Negrita */
+    padding: 8px 16px; /* Espaciado interno del botón */
+    border: 1px solid black; /* Borde negro */
+    border-radius: 4px; /* Esquinas redondeadas */
+    transition: background-color 0.3s ease; /* Transición suave para el fondo al hacer hover */
+}
+
+.menu-button:hover {
+    background-color: #2f855a; /* Cambia a un verde más oscuro al pasar el mouse */
+}
+
+/* Hero Section Styles */
+.hero-section {
+    flex: 1; /* Hace que la sección hero ocupe todo el espacio disponible */
+    padding: 24px; /* Espaciado interno de 24px */
+    background-image: url('/img/Me.jpg'); /* Imagen de fondo */
+    background-size: cover; /* La imagen cubre todo el espacio */
+    background-position: center; /* Centra la imagen */
+    position: relative; /* Posicionamiento relativo para los elementos dentro */
+}
+
+.hero-section::before {
+    content: ''; /* Crea un pseudo-elemento vacío */
+    position: absolute; /* Posiciona absolutamente dentro de la sección hero */
+    top: 0; /* Parte superior */
+    left: 0; /* Parte izquierda */
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Altura completa */
+    background-color: rgba(0, 0, 0, 0.5); /* Capa oscura semi-transparente */
+    z-index: 1; /* Coloca este elemento por debajo del contenido */
+}
+
+.hero-content {
+    position: relative; /* Posicionamiento relativo para asegurar que se mantenga encima del overlay */
+    z-index: 2; /* Asegura que el contenido esté por encima del overlay */
+    max-width: 768px; /* Ancho máximo de 768px */
+    margin: 0 auto; /* Centra horizontalmente */
+}
+
+.hero-intro {
+    background-color: #38a169; /* Color de fondo verde */
+    color: black; /* Color del texto negro */
+    padding: 8px 16px; /* Espaciado interno */
+    border-radius: 9999px; /* Esquinas completamente redondeadas */
+    display: inline-block; /* Se muestra como un bloque en línea */
+    margin-bottom: 16px; /* Margen inferior de 16px */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra del texto */
+}
+
+.hero-title {
+    font-size: 2.25rem; /* Tamaño de fuente grande */
+    font-weight: bold; /* Negrita */
+    margin-bottom: 16px; /* Margen inferior de 16px */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra del texto */
+}
+
+.hero-description {
+    margin-bottom: 24px; /* Margen inferior de 24px */
+}
+
+.hero-image-wrapper {
+    display: flex; /* Usa Flexbox para alinear las imágenes */
+    gap: 16px; /* Espacio entre las imágenes */
+}
+
+.hero-image {
+    border-radius: 8px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    width: 200px; /* Ancho fijo de 200px */
+    height: 200px; /* Altura fija de 200px */
+    object-fit: cover; /* Cubre el espacio sin distorsionar la imagen */
+    aspect-ratio: 1 / 1; /* Mantiene la proporción de 1:1 */
+}
+
+/* Tooling Section Styles */
+.tooling-section {
+    background-color: rgb(5, 8, 16); /* Color de fondo oscuro */
+    padding: 24px; /* Espaciado interno de 24px */
+}
+
+.tooling-content {
+    max-width: 768px; /* Ancho máximo de 768px */
+    margin: 0 auto; /* Centra horizontalmente */
+}
+
+.section-title {
+    font-size: 1.5rem; /* Tamaño de fuente grande */
+    font-weight: bold; /* Negrita */
+    margin-bottom: 16px; /* Margen inferior de 16px */
+    color: #38a169; /* Color verde */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra del texto */
+}
+
+.tooling-grid {
+    display: grid; /* Usa grid para alinear los elementos */
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+    gap: 16px; /* Espacio entre los elementos */
+}
+
+@media (min-width: 768px) {
+    .tooling-grid {
+        grid-template-columns: repeat(5, 1fr); /* Cambia a cinco columnas en pantallas más grandes */
+    }
+}
+
+.tooling-item {
+    background-color: #38a169; /* Color de fondo verde */
+    color: black; /* Color del texto negro */
+    padding: 8px; /* Espaciado interno */
+    border-radius: 8px; /* Esquinas redondeadas */
+    text-align: center; /* Alinea el texto al centro */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+/* Project Section Styles */
+.project-section {
+    background-color: rgb(5, 8, 16); /* Color de fondo oscuro */
+    padding: 24px; /* Espaciado interno de 24px */
+}
+
+.project-content {
+    max-width: 768px; /* Ancho máximo de 768px */
+    margin: 0 auto; /* Centra horizontalmente */
+}
+
+.featured-label {
+    color: #38a169; /* Color verde */
+    border: 1px solid #38a169; /* Borde verde */
+    padding: 8px 16px; /* Espaciado interno */
+    border-radius: 9999px; /* Esquinas completamente redondeadas */
+    display: inline-block; /* Se muestra como un bloque en línea */
+    margin-bottom: 16px; /* Margen inferior de 16px */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.project-grid {
+    display: grid; /* Usa grid para las tarjetas */
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+    gap: 16px; /* Espacio entre las tarjetas */
+}
+
+.project-card {
+    background-color: #2d3748; /* Color de fondo oscuro para la tarjeta */
+    border-radius: 8px; /* Esquinas redondeadas */
+    overflow: hidden; /* Oculta el desbordamiento */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.project-card-content {
+    padding: 16px; /* Espaciado interno de 16px */
+    display: flex; /* Usa Flexbox para alinear el contenido */
+    flex-direction: column; /* Alinea el contenido verticalmente */
+    justify-content: space-between; /* Espacio entre los elementos */
+}
+
+/* Connect Section */
+.connect-section {
+    background-color: rgb(5, 8, 16); /* Color de fondo oscuro */
+    padding: 24px; /* Espaciado interno de 24px */
+}
+
+.connect-container {
+    max-width: 768px; /* Ancho máximo de 768px */
+    margin: 0 auto; /* Centra horizontalmente */
+}
+
+.connect-title {
+    font-size: 2rem; /* Tamaño de fuente grande */
+    font-weight: bold; /* Negrita */
+    margin-bottom: 16px; /* Margen inferior de 16px */
+    color: #38a169; /* Color verde */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra del texto */
+}
+
+.connect-grid {
+    display: grid; /* Usa grid para alinear los botones */
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+    gap: 16px; /* Espacio entre los botones */
+    margin-bottom: 16px; /* Margen inferior de 16px */
+}
+
+@media (min-width: 768px) {
+    .connect-grid {
+        grid-template-columns: repeat(4, 1fr); /* Cambia a cuatro columnas en pantallas más grandes */
+    }
+}
+
+.connect-button {
+    background-color: transparent; /* Fondo transparente para el botón de conexión */
+    color: white; /* Color del texto blanco */
+    font-weight: bold; /* Negrita */
+    padding: 8px 16px; /* Espaciado interno */
+    border: 1px solid white; /* Borde blanco */
+    border-radius: 4px; /* Esquinas redondeadas */
+    text-align: center; /* Alinea el texto al centro */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra del botón */
+    transition: background-color 0.3s ease; /* Transición suave para el fondo al hacer hover */
+}
+
+.connect-button:hover {
+    background-color: #4a5568; /* Gris oscuro al hacer hover */
+}
+
+/* Mail Button */
+.mail-button {
+    display: block; /* Se muestra como un bloque */
+    width: 100%; /* Ancho completo */
+    background-color: #38a169; /* Color de fondo verde */
+    color: black; /* Color del texto negro */
+    font-weight: bold; /* Negrita */
+    padding: 8px 16px; /* Espaciado interno */
+    border-radius: 4px; /* Esquinas redondeadas */
+    text-align: center; /* Alinea el texto al centro */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra del texto */
+    transition: background-color 0.3s ease; /* Transición suave para el fondo al hacer hover */
+}
+
+.mail-button:hover {
+    background-color: #2f855a; /* Un verde más oscuro al hacer hover */
+}
+
