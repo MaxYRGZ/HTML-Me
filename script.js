@@ -1,17 +1,22 @@
-// Espera a que el DOM esté completamente cargado
-document.addEventListener("DOMContentLoaded", function() {
-    // Selecciona el botón por su ID
-    const menuButton = document.getElementById("menu-button");
-    
-    // Selecciona el contenedor del mensaje
-    const messageContainer = document.getElementById("message");
-    
-    // Añade un evento de clic al botón
-    menuButton.addEventListener("click", function() {
-        // Cambia el contenido del contenedor del mensaje
-        messageContainer.textContent = "The button works!";
-        // Opcional: puedes agregar una clase CSS para estilizar el mensaje
-        messageContainer.style.color = "green"; // Cambia el color del texto, por ejemplo
-        messageContainer.style.fontSize = "20px"; // Cambia el tamaño de la fuente
+document.addEventListener("DOMContentLoaded", function () {
+    const menuButton = document.getElementById("menu-button"); // Button reference
+    const messageContainer = document.getElementById("message"); // Message container
+
+    // Create the menu container dynamically
+    const menu = document.createElement("div");
+    menu.classList.add("menu"); // Apply CSS class for styling
+    menu.innerHTML = `
+        <ul>
+            <li><a href="#hero-section">Home</a></li>
+            <li><a href="#tooling-section">Tooling</a></li>
+            <li><a href="#project-section">Projects</a></li>
+            <li><a href="#connect-section">Connect</a></li>
+        </ul>
+    `;
+    document.body.appendChild(menu); // Add the menu to the body
+
+    // Toggle the menu's visibility on button click
+    menuButton.addEventListener("click", function () {
+        menu.classList.toggle("visible"); // Toggle the visibility class
     });
 });

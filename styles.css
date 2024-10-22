@@ -45,6 +45,41 @@ header {
 .menu-button:hover {
     background-color: #2f855a; /* Cambia a un verde más oscuro al pasar el mouse */
 }
+.menu {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 50px; /* Adjust based on your header height */
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.8); /* Transparent black background */
+    padding: 10px;
+    border-radius: 8px;
+    color: white;
+    z-index: 1000; /* Ensure the menu appears on top */
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    margin: 10px 0;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.visible {
+    display: block; /* Make menu visible when the class is toggled */
+}
+
 
 /* Hero Section Styles */
 .hero-section {
@@ -68,11 +103,16 @@ header {
 }
 
 .hero-content {
-    position: relative; /* Posicionamiento relativo para asegurar que se mantenga encima del overlay */
-    z-index: 2; /* Asegura que el contenido esté por encima del overlay */
-    max-width: 768px; /* Ancho máximo de 768px */
-    margin: 0 auto; /* Centra horizontalmente */
+    position: relative; /* Keeps it above the overlay */
+    z-index: 2; /* Ensures content stays on top */
+    max-width: 768px; /* Max width of the section */
+    margin: 0 auto; /* Centers it horizontally */
+    background-color: rgba(0, 0, 0, 0.5); /* Black with 50% transparency */
+    padding: 20px; /* Adds padding for spacing */
+    border-radius: 10px; /* Optional: Rounds the corners */
+    color: white; /* Makes text white for better readability */
 }
+
 
 .hero-intro {
     background-color: #38a169; /* Color de fondo verde */
@@ -94,7 +134,9 @@ header {
 
 .hero-description {
     margin-bottom: 24px; /* Margen inferior de 24px */
+    font-size: 1.5rem;
 }
+
 
 .hero-image-wrapper {
     display: flex; /* Usa Flexbox para alinear las imágenes */

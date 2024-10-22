@@ -1,81 +1,81 @@
 <!DOCTYPE html>
-<html lang="en"> <!-- Define el idioma del documento como inglés -->
+<html lang="en"> 
 <head>
-    <meta charset="UTF-8"> <!-- Establece la codificación de caracteres a UTF-8 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura el viewport para un diseño responsivo -->
-    <title>Portafolio</title> <!-- Título de la pestaña del navegador -->
-    <link href="styles.css" rel="stylesheet"> <!-- Enlaza la hoja de estilos CSS externa -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My personal portfolio</title>
+    <link href="styles.css" rel="stylesheet">
     <script src="script.js" defer></script>
 </head>
 <body>
     <!-- Header -->
     <header>
-        <div class="header-title">[]</div> <!-- Título del encabezado, puede ser modificado -->
-        <button id="menu-button" class="menu-button"> <!-- Botón de menú, podría abrir un menú desplegable -->
-            <!-- Icono de menú en SVG -->
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="3" y1="12" x2="21" y2="12"></line> <!-- Línea horizontal del medio -->
-                <line x1="3" y1="6" x2="21" y2="6"></line> <!-- Línea horizontal superior -->
-                <line x1="3" y1="18" x2="21" y2="18"></line> <!-- Línea horizontal inferior -->
+        <div class="header-title"></div>
+        <button id="menu-button" class="menu-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
             </svg>
         </button>
     </header>
-    <div id="message" class="message"></div> <!-- Contenedor para el mensaje -->
-
+    <div id="message" class="message"></div>
 
     <!-- Hero Section -->
-    <section class="hero-section"> <!-- Sección principal de presentación -->
-        <div class="hero-content"> <!-- Contenedor para el contenido de la sección -->
-            <div class="hero-intro">Hi There! I'm Max Yahir Rodriguez Gonzalez</div> <!-- Introducción personal -->
-            <h1 class="hero-title"> <!-- Título principal -->
-                I am a student at Tecnológico de Colima, studying Systems Engineering, and I will be helping you with your portfolios in HTML.
+    <section id="hero-section" class="hero-section">
+        <div class="hero-content">
+            <div class="hero-intro">Hi There! I'm Max Yahir Rodriguez Gonzalez</div>
+            <br>
+            <h1 class="hero-title">
+                I am a student at Tecnológico de Colima, studying Systems Engineering.
             </h1>
-            <p class="hero-description"> <!-- Descripción de la experiencia del usuario -->
-                    This portfolio is an example of how you can create yours. I have developed several applications and am currently in the process of completing my professional residency.
-            </p>
-            <div class="hero-image-wrapper"> <!-- Contenedor para la imagen de la sección hero -->
-                <img alt="Onyedika working on laptop" class="hero-image" src="/img/LOGO-VERTICAL-TECNM.png"> <!-- Imagen representativa -->
-            </div>
+            <br>
+            <p class="hero-description">
+                Computer Systems Engineering student in the final semester, with hands-on experience in web development, mobile applications, databases, cybersecurity, and user interface design. Strong background in cloud services, software testing, networking, and hardware maintenance. Proven ability to develop expert systems, chatbots, and games, with an understanding of color theory for UI/UX design. Experienced in business negotiations and warehouse management. Passionate about teamwork, problem-solving, and applying cutting-edge technologies.            </p>
+
         </div>
     </section>
 
     <!-- Tooling Section -->
-    <section class="tooling-section"> <!-- Sección de herramientas -->
-        <div class="tooling-content"> <!-- Contenedor para el contenido de herramientas -->
-            <h2 class="section-title">TOOLING</h2> <!-- Título de la sección -->
-            <div class="tooling-grid"> <!-- Contenedor de grid para las herramientas -->
-                <div class="tooling-item">React</div> <!-- Elemento de herramienta -->
-                <div class="tooling-item">Angular</div> <!-- Elemento de herramienta -->
-                <div class="tooling-item">Node</div> <!-- Elemento de herramienta -->
-                <div class="tooling-item">MongoDB</div> <!-- Elemento de herramienta -->
-                <div class="tooling-item">JavaScript</div> <!-- Elemento de herramienta -->
-                <div class="tooling-item">Figma</div> <!-- Elemento de herramienta -->
-                <div class="tooling-item">Sass</div> <!-- Elemento de herramienta -->
-                <div class="tooling-item">TypeScript</div> <!-- Elemento de herramienta -->
-                <div class="tooling-item">Solidity</div> <!-- Elemento de herramienta -->
-                <div class="tooling-item">Polygon</div> <!-- Elemento de herramienta -->
+    <section id="tooling-section" class="tooling-section">
+        <div class="tooling-content">
+            <h2 class="section-title">TOOLING</h2>
+            <div class="tooling-grid">
+                <div class="tooling-item">C</div>
+                <div class="tooling-item">C++</div>
+                <div class="tooling-item">Java</div>
+                <div class="tooling-item">React Native</div>
+                <div class="tooling-item">SQL Server</div>
+                <div class="tooling-item">SQLite</div>
+                <div class="tooling-item">Python</div>
+                <div class="tooling-item">Cisco Networking</div>
+                <div class="tooling-item">Docker</div>
+                <div class="tooling-item">Angular</div>
+                <div class="tooling-item">React</div>
+                <div class="tooling-item">HTML/JS/CSS</div>
             </div>
         </div>
     </section>
     
     <!-- Featured Project Section -->
-    <section class="project-section"> <!-- Sección de proyectos destacados -->
-        <div class="project-content"> <!-- Contenedor para el contenido de proyectos -->
-            <h2 class="section-title">ALL PROJECT DETAILS</h2> <!-- Título de la sección -->
-            <div class="featured-label">FEATURED</div> <!-- Etiqueta para proyectos destacados -->
-            <div class="project-grid"> <!-- Contenedor de grid para los proyectos -->
-                <div class="project-card"> <!-- Tarjeta de proyecto -->
-                    <div class="project-card-content"> <!-- Contenedor del contenido de la tarjeta -->
-                        <img alt="Gato" class="project-image" src="/img/Gato.png"> <!-- Imagen del proyecto -->
-                        <h3 class="project-title">Game</h3> <!-- Título del proyecto -->
-                        <a href="https://html-gato.vercel.app" class="connect-button">Cat</a> <!-- Enlace al proyecto -->
+    <section id="project-section" class="project-section">
+        <div class="project-content">
+            <h2 class="section-title">ALL PROJECT DETAILS</h2>
+            <div class="featured-label">FEATURED</div>
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="project-card-content">
+                        <img alt="Gato" class="project-image" src="/img/Gato.png">
+                        <h3 class="project-title">Game</h3>
+                        <a href="https://html-gato.vercel.app" class="connect-button">Cat</a>
                     </div>
                 </div>
-                <div class="project-card"> <!-- Tarjeta de otro proyecto -->
-                    <div class="project-card-content"> <!-- Contenedor del contenido de la tarjeta -->
-                        <img alt="2048" class="project-image" src="/img/2048.png"> <!-- Imagen del proyecto -->
-                        <h3 class="project-title">Game</h3> <!-- Título del proyecto -->
-                        <a href="https://html-2048-game.vercel.app" class="connect-button">2048</a> <!-- Enlace al proyecto -->
+                <div class="project-card">
+                    <div class="project-card-content">
+                        <img alt="2048" class="project-image" src="/img/2048.png">
+                        <h3 class="project-title">Game</h3>
+                        <a href="https://html-2048-game.vercel.app" class="connect-button">2048</a>
                     </div>
                 </div>
             </div>
@@ -83,22 +83,22 @@
     </section>
 
     <!-- Connect Section -->
-    <section class="connect-section"> <!-- Sección de contacto -->
-        <div class="connect-container"> <!-- Contenedor para el contenido de contacto -->
-            <h2 class="connect-title">CONNECT WITH ME</h2> <!-- Título de la sección -->
-            <div class="connect-grid"> <!-- Contenedor de grid para los botones de conexión -->
-                <a href="https://github.com/MaxYRGZ" class="connect-button">Github</a> <!-- Enlace a GitHub -->
-                <a href="#" class="connect-button">LinkedIn</a> <!-- Enlace a LinkedIn -->
-                <a href="https://www.instagram.com/maxyahir/?igsh=MThncmwwZ29kM3BveA%3D%3D" class="connect-button">Instagram</a> <!-- Enlace a Twitter -->
-                <a href="https://vercel.com/maxyrgzs-projects" class="connect-button">Vercel</a> <!-- Enlace a Vercel -->
+    <section id="connect-section" class="connect-section">
+        <div class="connect-container">
+            <h2 class="connect-title">CONNECT WITH ME</h2>
+            <div class="connect-grid">
+                <a href="https://github.com/MaxYRGZ" class="connect-button">Github</a>
+                <a href="#" class="connect-button">LinkedIn</a>
+                <a href="https://www.instagram.com/maxyahir/?igsh=MThncmwwZ29kM3BveA%3D%3D" class="connect-button">Instagram</a>
+                <a href="https://vercel.com/maxyrgzs-projects" class="connect-button">Vercel</a>
             </div>
-            <a href="mailto:maxyahirrg@gmail.com" class="mail-button">SHOOT ME A MAIL</a> <!-- Botón para enviar un correo -->
+            <a href="mailto:maxyahirrg@gmail.com" class="mail-button">SHOOT ME A MAIL</a>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer style="background-color: rgb(5, 8, 16); color: white; padding: 1rem; text-align: center;"> <!-- Pie de página con estilo inline -->
-        <p>© 2024 Max Yahir Rodriguez Gonzalez</p>  <!-- Contenido del pie de página -->
+    <footer style="background-color: rgb(5, 8, 16); color: white; padding: 1rem; text-align: center;">
+        <p>© 2024 Max Yahir Rodriguez Gonzalez</p>
     </footer>
 </body>
 </html>
